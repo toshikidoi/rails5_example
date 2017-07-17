@@ -54,10 +54,4 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-
-  config.after do |example|
-    if example.metadata[:type] == :feature && example.exception.present?
-      save_page Rails.root.join('public', 'capybara.html')
-    end
-  end
 end
