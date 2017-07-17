@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Book, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe '#say_san' do
+    let(:book) { create(:book) }
+
+    subject { book.say_san }
+
+    it '自身のtitleに「さん」を追加した文字列を返す' do
+      expect(subject).to eq('MyStringさん')
+    end
+  end
 end
