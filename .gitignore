@@ -2,7 +2,7 @@
 
 ### Rails ###
 *.rbc
-capybara-*.html
+capybara.html
 .rspec
 /log
 /tmp
