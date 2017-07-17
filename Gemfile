@@ -47,6 +47,8 @@ group :development, :test do
   # Better irb
   gem 'pry-rails'
   gem 'pry-byebug'
+  # Save screen shot when test failed
+  gem 'launchy'
 end
 
 group :development do
